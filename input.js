@@ -21,6 +21,9 @@ const setupInput = (conn) => {
     if (key === "d") {
       connection.write("Move: right");
     }
+    if (key === "n") {
+      connection.write("Say: Going to sleep!");
+    }
   });
 
   return stdin;
