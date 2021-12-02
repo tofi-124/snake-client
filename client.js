@@ -15,6 +15,8 @@ const connect = function () {
     console.log("connected to the server");
   });
 
+  conn.write("Name: TOF");
+
   conn.on("data", (data) => {
     console.log(data);
   });
@@ -27,6 +29,7 @@ const connect = function () {
 
 //Zoom-link
 // https://us02web.zoom.us/j/88376150816?pwd=cThjeGU3Z2FIb0hlblZuSXUvVWR0UT09
+
 let clientConnect = connect;
 
-module.exports = {clientConnect}
+module.exports = { clientConnect };
